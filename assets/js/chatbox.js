@@ -1,0 +1,1 @@
+function showHideGB(){var b=document.getElementById("gb");var a=b.offsetWidth;b.opened?moveGB(0,30-a):moveGB(20-a,0);b.opened=!b.opened}function moveGB(d,e){var f=document.getElementById("gb");var b=Math.abs(d-e)>10?5:1;var c=e>d?1:-1;var a=d+b*c;f.style.right=a.toString()+"px";if(d!=e){setTimeout("moveGB("+a+", "+e+")",10)}}
